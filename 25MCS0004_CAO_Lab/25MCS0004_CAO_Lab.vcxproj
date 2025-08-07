@@ -176,11 +176,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="25MCS0004_Main.cpp">
+    <ClCompile Include="25MCS0004_Main_1.cpp">
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">MultiThreadedDLL</RuntimeLibrary>
       <OpenMPSupport Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</OpenMPSupport>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="25MCS0004_Main_2.cpp">
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</OpenMPSupport>
+    </ClCompile>
+    <ClCompile Include="25MCS0004_Main_2A.cpp" />
+    <ClCompile Include="25MCS0004_Main_3.cpp">
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</OpenMPSupport>
+    </ClCompile>
+    <ClCompile Include="25MCS0004_Main_3A.cpp">
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">MultiThreadedDLL</RuntimeLibrary>
       <OpenMPSupport Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</OpenMPSupport>
     </ClCompile>
@@ -189,7 +198,10 @@
     <ClInclude Include="Greet.h" />
     <ClInclude Include="hello_parallel.h" />
     <ClInclude Include="hello_serial.h" />
+    <ClInclude Include="openMpRoutines.h" />
+    <ClInclude Include="parallel_construct.h" />
     <ClInclude Include="rer_metrics.h" />
+    <ClInclude Include="squareArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
